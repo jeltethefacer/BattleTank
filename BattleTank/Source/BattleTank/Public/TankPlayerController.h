@@ -20,7 +20,9 @@ private:
 	
 	void BeginPlay() override;
 	void Tick(float DeltaTime) override;
-	
-	
+		
 	void AimTowardsCrosshair();
+
+	//Return Out parameter, True if hits landscape.
+	bool GetSightHitLocation(FVector& HitLocation) const;
 };
